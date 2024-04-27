@@ -9,19 +9,19 @@ HSL and HSV are alternative representations of the RGB color model, designed in 
 HSV Color Space. The HSV color space (hue, saturation, value) is often used by people who are selecting colors (e.g., of paints or inks) from a color wheel or palette, because it corresponds better to how people experience color than the RGB color space does.
 
 # BGR to HSV
-#dst = cv2.cvtColor(src, cv2.COLOR_BGR2HSV)
+### dst = cv2.cvtColor(src, cv2.COLOR_BGR2HSV)
 
 hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
 
 # Minimum Enclosing Circle
-#((x, y), radius) = cv2.minEnclosingCircle(countourArea)
+### ((x, y), radius) = cv2.minEnclosingCircle(countourArea)
 
 ((x, y), radius) = cv2.minEnclosingCircle(c)
 
 # Moments to find center of the Area
 Image moments help you to calculate some features like center of mass of the object, area of the object etc.
 
-#var = cv2.moments(contourArea)
+### var = cv2.moments(contourArea)
 
 M = cv2.moments(c)
 
