@@ -53,7 +53,7 @@ Drawing circle & centre
 
 Direction based on radius & Position 
 
-# Object Tracking based on 
+# Object Tracking based on color
 import imutils
 
 import cv2
